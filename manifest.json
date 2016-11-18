@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Msg encrypt",
+  "description": "End to End encrypts facebook messeanger",
+  "version": "0.01",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://www.messenger.com/*",
+    "http://www.messenger.com/*",
+	"cookies"
+  ],
+  "icons": {"128": "icon.png" },
+   "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+"inject.js",
+"encrypter.js"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.messenger.com/*","http://www.messenger.com/*"],
+      "js": ["boot.js"]
+    }
+  ]
+
+}
