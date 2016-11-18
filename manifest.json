@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Msg encrypt",
-  "description": "End to End encrypts facebook messeanger",
+  "description": "End to End encrypts facebook messenger",
   "version": "0.01",
   "permissions": [
     "activeTab",
