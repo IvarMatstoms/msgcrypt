@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.messenger.com/*","http://www.messenger.com/*"],
-      "js": ["boot.js"]
+      "js": ["boot.js","jquery.min.js","encrypter.js","decrypter.js"]
     }
   ]
 
